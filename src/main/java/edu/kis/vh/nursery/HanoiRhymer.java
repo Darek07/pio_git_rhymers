@@ -14,6 +14,14 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
         else
             super.countIn(in);
     }
+
+    public int getTotalRejected() {
+        return totalRejected;
+    }
+
+    public void setTotalRejected(int totalRejected) {
+        this.totalRejected = totalRejected;
+    }
 }
 
 // ctrl + <- oraz ctrl + -> przełączają się pomiędzy otwartymi wyżej plikami
