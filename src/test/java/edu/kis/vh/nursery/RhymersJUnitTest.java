@@ -10,11 +10,10 @@ public class RhymersJUnitTest {
 	@Test
 	public void testCountIn() {
 		DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
-		int testValue = TEST_VALUE;
-		rhymer.countIn(testValue);
+		rhymer.countIn(TEST_VALUE);
 
 		int result = rhymer.getNumber();
-		Assert.assertEquals(testValue, result);
+		Assert.assertEquals(TEST_VALUE, result);
 	}
 
 	@Test
@@ -52,14 +51,13 @@ public class RhymersJUnitTest {
 		int result = rhymer.getNumber();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
-		int testValue = TEST_VALUE;
-		rhymer.countIn(testValue);
+		rhymer.countIn(TEST_VALUE);
 
 		result = rhymer.getNumber();
-		Assert.assertEquals(testValue, result);
+		Assert.assertEquals(TEST_VALUE, result);
 
 		result = rhymer.getNumber();
-		Assert.assertEquals(testValue, result);
+		Assert.assertEquals(TEST_VALUE, result);
 	}
 
 	@Test
@@ -70,11 +68,10 @@ public class RhymersJUnitTest {
 		int result = rhymer.countOut();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
-		int testValue = TEST_VALUE;
-		rhymer.countIn(testValue);
+		rhymer.countIn(TEST_VALUE);
 
 		result = rhymer.countOut();
-		Assert.assertEquals(testValue, result);
+		Assert.assertEquals(TEST_VALUE, result);
 
 		result = rhymer.countOut();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
